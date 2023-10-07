@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Ubuntu', sans-serif;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+
+body{
+    background-image: linear-gradient(to right,#01022d,#000);
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-image: 
+    linear-gradient(to right , #01022de5 30% , #00000088),
+    url(images/avatar.jpg);
+    width:100%;
+    height:640px;
+    background-position: center;
+}
+.container:hover{
+    background-image: 
+    linear-gradient(to right , #01022de5 30% , transparent),
+    url(images/avatar.jpg);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+.logo{
+    color:white;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+ul{
+    width:60%;
+    list-style-type:none;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul a:hover{
+    border-bottom: 2px solid white;
+}
+.content{
+    margin-top:50px;
+    padding:30px;
+    color:white;
+    width:50%;
+}
+.content h2{
+    text-transform: uppercase;
+    font-size: 6.25em;
+    letter-spacing: 3px;
+}
+.content p{
+    line-height: 25px;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+    font-size: 1.1em;
+    width:400px;
+    padding:20px 0px;
+}
+.content button{
+    border-radius: 10px;
+    padding:6px 10px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+.content button:hover{
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+}
+
+@media(max-width:800px){
+    .container{
+        width:100%;
+        margin-top:50px;
+    }
+    .container.logo{
+        font-size: 1em;
+        letter-spacing :1px;
+    }
+    .container ul li{
+        margin-left: 5px;
+        font-size: 13px;
+    }
+    .content{
+        padding:10px;
+        width:100%;
+    }
+    .content h2{
+        font-size: 3.5em;
+    }
+    .content p{
+        word-spacing: 0px;
+        line-height: 23px;
+        padding:6px 0px;
+        margin:13px 5px;
+        width:250px;
+    }
+    .content button{
+        border-radius: 9px;
+        padding:6px 10px;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+}
+
